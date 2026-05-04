@@ -1,0 +1,16 @@
+@media print {
+    #job-print-layout {
+        display: block !important;
+    }
+    #button-section,
+    #form-section,
+    #hero-section,
+    #invoice-details-section,
+    #job-history-log {
+        display: none !important;
+    }
+}
+
+#invoice-details-section.block-mode-pinned h3>span {
+    display: none !important;
+}

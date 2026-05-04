@@ -1,0 +1,23 @@
+@media print {
+    #quote-print-layout {
+        display: block !important;
+    }
+    #button-section,
+    #form-section,
+    #hero-section {
+        display: none !important;
+    }
+}
+
+.charge-table-input {
+    padding-right: 0 !important;
+    border-color: #d2d8e100 !important;
+}
+
+#customer-discount-tooltip {
+    cursor: pointer;
+}
+
+#discount-alert {
+    display: none;
+}

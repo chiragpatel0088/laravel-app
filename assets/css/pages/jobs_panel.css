@@ -1,0 +1,3 @@
+.dtrg-group>td::before {
+    display: none !important;
+}

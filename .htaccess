@@ -1,0 +1,32 @@
+SetEnv PHPRC /home/customer/www/spindle.jaxxonconcretepumps.co.nz/public_html/php.ini
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule (.*) $1\.php [L]
+
+SetEnv PHPRC /home/customer/www/app.jaxxonconcretepumps.co.nz/public_html/php.ini
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule (.*) $1\.php [L]
+
+# Requires mod_expires to be enabled.
+<IfModule mod_expires.c>
+  # Enable expirations.
+  ExpiresActive On
+
+<FilesMatch ".(pdf)$">
+  Header set Cache-Control "max-age=0"
+</FilesMatch>
+
+</IfModule>
+AddHandler application/x-httpd-php73 .php .php5 .php4 .php3
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule (.*) $1\.php [L]
+AddHandler application/x-httpd-php82 .php .php5 .php4 .php3

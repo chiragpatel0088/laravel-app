@@ -1,0 +1,18 @@
+/* Fix issue with date time being long as hell */
+
+@media only screen and (max-width: 600px) {
+    .table td.datetime {
+        max-width: 130px;
+    }
+    .table td.datetime span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        max-width: 100%;
+    }
+    .table td.datetime span:hover {
+        overflow: visible;
+        white-space: unset;
+    }
+}

@@ -1,0 +1,7 @@
+.table td.address {
+    max-width: 300px;
+}
+
+.no-height {
+    max-height: 0 !important;
+}

@@ -1,0 +1,6 @@
+@media print {
+    .quote-controls,
+    .customer-prompt {
+        display: none !important;
+    }
+}

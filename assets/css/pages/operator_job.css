@@ -1,0 +1,12 @@
+#customer-select,
+#customer-select+.select2-container,
+#layer-select,
+#layer-select+.select2-container,
+#supplier-select,
+#supplier-select+.select2-container,
+#operator-select,
+#operator-select+.select2-container,
+#foreman-select,
+#foreman-select+.select2-container {
+    display: none !important;
+}

@@ -1,0 +1,16 @@
+#js-dataTable-newCustomer_wrapper,
+#js-dataTable-newCustomer_wrapper>.dt-buttons {
+    display: inline !important;
+}
+
+
+/* Fix modal and autocomplete zindex issue */
+
+.nc_list {
+    z-index: 999999999 !important;
+}
+
+.DTED_Lightbox_Background,
+.DTED.DTED_Lightbox_Wrapper {
+    z-index: 999999 !important;
+}

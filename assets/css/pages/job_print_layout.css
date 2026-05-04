@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .responsive-center {
+        text-align: center !important;
+    }
+    .responsive-left {
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .responsive-left {
+        margin-top: 10%;
+    }
+}
